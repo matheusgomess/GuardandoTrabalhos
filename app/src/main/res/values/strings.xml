@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">GuardandoTrabalhos</string>
     <string-array name="Disciplinas">
-        <item>Empreendorismo</item>
+        <item>Empreendedorismo</item>
         <item>Arquitetura De Software</item>
         <item>Atividades Complementares</item>
         <item>Desenvolvimento Web</item>
