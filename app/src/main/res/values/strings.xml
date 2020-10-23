@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">GuardandoTrabalhos</string>
+    <string-array name="Disciplinas">
+        <item>Empreendorismo</item>
+        <item>Arquitetura De Software</item>
+        <item>Atividades Complementares</item>
+        <item>Desenvolvimento Web</item>
+        <item>Programação Para Dispositivos Móveis</item>
+        <item>Projeto Experimental</item>
+        <item>Tópicos Avançados Em Banco De Dados</item>
+    </string-array>
 </resources>

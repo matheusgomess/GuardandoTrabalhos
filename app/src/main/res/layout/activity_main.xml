@@ -17,13 +17,13 @@
         android:fontFamily="@font/allan"
         android:text="Trabalhos Acadêmicos"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/idDisciplina"
+        app:layout_constraintBottom_toTopOf="@+id/idDisciplinas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/idDisciplina"
+        android:id="@+id/idDisciplinas"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
@@ -51,7 +51,7 @@
         app:layout_constraintBottom_toTopOf="@+id/idDescricaoTrabalho"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idDisciplina" />
+        app:layout_constraintTop_toBottomOf="@+id/idDisciplinas" />
 
     <EditText
         android:id="@+id/idDescricaoTrabalho"
@@ -102,13 +102,13 @@
         android:hint="Data Entrega"
         android:inputType="textPersonName"
         android:textAlignment="viewStart"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/idCadastrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idPontos" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/idCadastrar"
         android:layout_width="123dp"
         android:layout_height="55dp"
         android:layout_marginStart="127dp"
