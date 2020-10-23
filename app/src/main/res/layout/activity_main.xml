@@ -7,12 +7,121 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/idTrabalho"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="27dp"
+        android:fontFamily="@font/allan"
+        android:text="Trabalhos Acadêmicos"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/idDisciplina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/idDisciplina"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/idNomeTrabalho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTrabalho" />
+
+    <EditText
+        android:id="@+id/idNomeTrabalho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:fontFamily="@font/allan"
+        android:hint="Nome do Trabalho"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/idDescricaoTrabalho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idDisciplina" />
+
+    <EditText
+        android:id="@+id/idDescricaoTrabalho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:fontFamily="@font/allan"
+        android:hint="Descrição do Trabalho"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/idPontos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idNomeTrabalho" />
+
+    <EditText
+        android:id="@+id/idPontos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:fontFamily="@font/allan"
+        android:hint="Pontos"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/idDataEntrega"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idDescricaoTrabalho" />
+
+    <EditText
+        android:id="@+id/idDataEntrega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:fontFamily="@font/allan"
+        android:hint="Data Entrega"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idPontos" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="123dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="30dp"
+        android:drawableLeft="@android:drawable/sym_action_email"
+        android:fontFamily="@font/allan"
+        android:text="Cadastrar"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idDataEntrega" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
