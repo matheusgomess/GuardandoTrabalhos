@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
     Button idCadastrar;
     ListView listaDeTrabalhos;
     Button idListaDePresenca;
-    private DisciplinasDatabase disciplinasDatabase;
-    private DisciplinasAdapter disciplinasAdapter;
+    DisciplinasDatabase disciplinasDatabase;
+    DisciplinasAdapter disciplinasAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,8 +41,11 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.Disciplinas, android.R.layout.simple_spinner_item);
         idDisciplinas.setAdapter(adapter);
 
+        listaDeTrabalhos = (ListView) findViewById(R.id.listadeTrabalhos);
         disciplinasDatabase = DisciplinasDatabase.getInstance(MainActivity.this);
-        listaDeTrabalhos = (ListView) findViewById(R.id.idListView);
+
+        List<Disciplinas> disciplinasList = disciplinasDatabase.getDisciplinasDAO().list();
+        listaDeTrabalhos.setAdapter(disciplinasAdapter);
 
         idCadastrar = (Button)findViewById(R.id.idCadastrar);
     }

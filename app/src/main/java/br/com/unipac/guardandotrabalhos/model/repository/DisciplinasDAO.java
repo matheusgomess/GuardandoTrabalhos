@@ -24,4 +24,6 @@ public interface DisciplinasDAO {
 
     @Query("SELECT * FROM disciplinas")
     List<Disciplinas> getAll();
+
+    List<Disciplinas> list();
 }
